@@ -1,0 +1,125 @@
+/**
+ * @name Smooth Anim Private
+ * @author PRINTmov
+ * @version 1.0.0
+ * @description Add smooth animations to your Discord.
+ * @authorId printmov
+ * @source https://github.com/printto/BetterDiscord-SmoothAnim
+ * @website https://www.printmov.com/
+*/
+
+.wrapper_ef3116 {
+    border-radius: 10px;
+    background-color: #000000aa;
+}
+
+.listItem__650eb {
+    transition: 0.25s;
+}
+
+    .listItem__650eb:hover {
+        transform: scale(1.1) translateX(5px);
+    }
+
+    .listItem__650eb:active {
+        transform: scale(1);
+        transition: 0.1s;
+    }
+
+.gradientBackground__11664 {
+    animation: fadeInImg 1s ease forwards;
+}
+
+body * {
+    transition: all 0.25s, height 0s, width 1s;
+}
+
+img {
+    animation: fadeInImg 0.5s ease forwards;
+}
+
+.avatar__75742 img {
+    animation: none !important;
+}
+
+.popout_523 {
+    animation: fadeInImg 0.5s ease forwards;
+}
+
+.popout_523 div {
+    animation: none !important;
+}
+
+.popout_523 img {
+    animation: none !important;
+}
+
+.discriminator__0a06e {
+    animation: fadeOutText 0.6s ease forwards;
+}
+
+.hovered__0a06e .discriminator__0a06e {
+    animation: fadeInText 0.6s ease forwards !important;
+}
+
+.notice__30f28 {
+    animation: heightTopIn 0.6s ease forwards !important;
+}
+
+.bannerImage_f37cb1 {
+    animation: fadeInImg 1s ease forwards !important;
+}
+
+.progressBar_eff079 {
+    animation: widthIn 1.2s ease forwards !important;
+}
+
+@keyframes fadeInText {
+    from {
+        color: #ffffff00;
+        text-shadow: #00000000;
+        box-shadow: #00000000;
+    }
+
+    to {
+    }
+}
+
+@keyframes fadeOutText {
+
+    from {
+    }
+
+    to {
+        color: #ffffff00;
+        text-shadow: #00000000;
+        box-shadow: #00000000;
+    }
+}
+
+@keyframes fadeInImg {
+    from {
+        opacity: 0;
+    }
+
+    to {
+    }
+}
+
+@keyframes heightTopIn {
+    from {
+        transform: translateY(-50%) scaleY(0);
+    }
+
+    to {
+    }
+}
+
+@keyframes widthIn {
+    from {
+        width: 0;
+    }
+
+    to {
+    }
+}
