@@ -17,14 +17,14 @@
     transition: 0.25s;
 }
 
-    .listItem__650eb:hover {
-        transform: scale(1.1) translateX(5px);
-    }
+.listItem__650eb:hover {
+    transform: scale(1.1) translateX(5px);
+}
 
-    .listItem__650eb:active {
-        transform: scale(1);
-        transition: 0.1s;
-    }
+.listItem__650eb:active {
+    transform: scale(1);
+    transition: 0.1s;
+}
 
 .gradientBackground__11664 {
     animation: fadeInImg 1s ease forwards;
