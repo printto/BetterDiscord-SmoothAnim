@@ -2,124 +2,331 @@
  * @name Smooth Anim
  * @author PRINTmov
  * @version 1.0.0
- * @description Add smooth animations to your Discord.
+ * @description An Aero theme that adds smooth transitions and subtle animations to your Discord.
  * @authorId printmov
- * @source https://github.com/printto/BetterDiscord-SmoothAnim
  * @website https://www.printmov.com/
 */
 
+/* Old Windows titlebar - remove this @import if you wish to use default titlebar */
+@import url("https://gibbu.github.io/BetterDiscord-Themes/addons/windows-titlebar.css");
+
+:root {
+  /* Black with varying alpha */
+  --bg-black-00: #00000000;
+  --bg-black-22: #00000022;
+  --bg-black-55: #00000055;
+  --bg-black-77: #00000077;
+  --bg-black-aa: #000000aa;
+  /* White with varying alpha */
+  --bg-white-11: #ffffff11;
+  --bg-white-22: #ffffff22;
+  /* Transparent fallback */
+  --transparent: transparent;
+}
+
+* {
+  --background-primary: var(--bg-black-22);
+  --background-secondary: var(--transparent);
+  --background-secondary-alt: var(--bg-white-11);
+  --background-base-lowest: var(--bg-black-55);
+  --background-base-lower: var(--bg-black-22);
+  --background-surface-highest: var(--bg-black-77);
+  --background-surface-higher: var(--bg-black-55);
+  --background-surface-high: var(--bg-white-11);
+  --button-filled-brand-background: var(--bg-white-11);
+}
+
+.bg__960e4 {
+  /* background: url('https://static.wikitide.net/windowswallpaperwiki/4/4b/1920x1200_%28Windows_Vista%29.jpg') !important; */
+  /* background: url('https://static.wikitide.net/windowswallpaperwiki/9/95/WinPE_background_%28Windows_Vista_RTM%29.png') !important; */
+  background: url('https://static.wikitide.net/windowswallpaperwiki/e/e8/Setup_background_%28Windows_Vista_Setup_Window%29.png') !important;
+  background-position: center !important;
+  background-size: cover !important;
+}
+
+.title_c38106 {
+  background-color: var(--bg-black-aa);
+}
+
+.sidebar_c48ade {
+  background: var(--bg-black-aa) !important;
+}
+
 .wrapper_ef3116 {
-    border-radius: 10px;
-    background-color: #000000aa;
+  background-color: var(--bg-black-55) !important;
+}
+
+.tutorialContainer__1f388 {
+  padding-top: 15px !important;
+}
+
+.privateChannels__35e86,
+.container__2637a {
+  background: var(--bg-black-55) !important;
+}
+
+.sidebar_c48ade::after {
+  opacity: 0;
+}
+
+.scroller__99e7c {
+  background: var(--transparent) !important;
+}
+
+.sidebarListRounded_c48ade {
+  -webkit-backdrop-filter: blur(0);
+  backdrop-filter: blur(0);
+  border-radius: var(--radius-md);
+  margin-right: 6px;
+  margin-bottom: 75px;
+}
+
+.panels_c48ade {
+  background: var(--bg-white-22) !important;
+  backdrop-filter: blur(10px);
+}
+
+.wrapper_ef3116 {
+  border-radius: var(--radius-md);
+  background-color: var(--bg-black-aa);
+}
+
+.page_c48ade {
+  background: var(--bg-black-77) !important;
+  margin-bottom: 20px !important;
+  outline: 0 !important;
+  border: 0 !important;
+  padding-right: 7px;
+  position: relative;
+}
+
+.page_c48ade::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 7px;
+  background: #00000060;
+}
+
+.chat_f75fb0 {
+  background: #00000060 !important;
+  margin-top: 0px !important;
+}
+
+.themed__9293f {
+  background: var(--bg-black-55) !important;
+  border-top-left-radius: var(--radius-md);
+  border-top-right-radius: var(--radius-md);
+}
+
+.children__9293f::after {
+  opacity: 0;
+}
+
+.chatContent_f75fb0,
+.scrollableContainer__74017,
+.container_c8ffbb {
+  background: var(--bg-black-22) !important;
+}
+
+.tabBody__133bf {
+  background-color: var(--bg-black-55) !important;
+}
+
+.container__133bf {
+  /* background-color: var(--bg-black-aa); */
+  border-top: 1px solid var(--app-border-frame);
+}
+
+.searchBar__5ec2f {
+  background: var(--bg-black-22) !important;
+}
+
+.members_c8ffbb {
+  background: var(--bg-black-55) !important;
+}
+
+.actionButton_f8fa06 {
+  background-color: var(--bg-white-11) !important;
+}
+
+.channelTextArea_f75fb0 {
+  background: var(--bg-black-22) !important;
+  backdrop-filter: blur(10px);
+}
+
+.textArea__74017,
+.textArea__74017 * {
+  transition: all 0.25s height 1s;
+}
+
+.member_c8ffbb {
+  background: var(--transparent) !important;
+}
+
+.guilds_c48ade {
+  transform: scale(0.85);
 }
 
 .listItem__650eb {
-    transition: 0.25s;
+  transition: 0.25s;
 }
 
 .listItem__650eb:hover {
-    transform: scale(1.1) translateX(5px);
+  transform: scale(1.2) translateX(5px);
 }
 
 .listItem__650eb:active {
-    transform: scale(1);
-    transition: 0.1s;
+  transform: scale(1);
+  transition: 0.1s;
 }
 
 .gradientBackground__11664 {
-    animation: fadeInImg 1s ease forwards;
+  animation: fadeInImg 1s ease forwards;
+}
+
+.container__2692d,
+.recentMentionsPopout__95796,
+.menu_c1e9c4,
+.messagesPopoutWrap__45690,
+.container_d9c882 {
+  background: var(--bg-white-11) !important;
+  backdrop-filter: blur(20px);
+}
+
+.header__45690,
+.tutorial__2692d,
+.wrapper__44df5,
+.header_d9c882 {
+  background-color: var(--bg-black-77) !important;
+}
+
+.visual-refresh .header__0b563,
+.visual-refresh .container__0b563,
+.prompt__5d7c9 {
+  background-color: var(--bg-black-55) !important;
+}
+
+.channelHeader__35a7e {
+  background-color: var(--bg-black-00) !important;
+  backdrop-filter: blur(10px);
+}
+
+.container__0f711 {
+  background-color: var(--transparent) !important;
+}
+
+.messages__1ccd1,
+.messageContainer__95796 {
+  background-color: var(--bg-black-77) !important;
+  border-radius: 0 !important;
+  padding: 10px;
+  animation: heightTopIn 0.5s ease forwards;
+}
+
+.scroller__99e7c {
+  margin-bottom: 0px;
+}
+
+.tooltipPrimary__382e7 {
+  background-color: var(--bg-white-11) !important;
+  backdrop-filter: blur(20px);
+}
+
+.bottomBar__0f481 {
+  backdrop-filter: blur(10px);
+}
+
+.wrapper_cb9592 {
+  border-radius: var(--radius-md);
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: var(--bg-black-55) !important;
 }
 
 body * {
-    transition: all 0.25s, height 0s, width 1s;
+  transition: all 0.25s, height 0s, width 1s;
 }
 
 img {
-    animation: fadeInImg 0.5s ease forwards;
+  animation: fadeInImg 0.5s ease forwards;
 }
 
 .avatar__75742 img {
-    animation: none !important;
+  animation: none !important;
 }
 
 .popout_523 {
-    animation: fadeInImg 0.5s ease forwards;
+  animation: fadeInImg 0.5s ease forwards;
 }
 
 .popout_523 div {
-    animation: none !important;
+  animation: none !important;
 }
 
 .popout_523 img {
-    animation: none !important;
+  animation: none !important;
 }
 
 .discriminator__0a06e {
-    animation: fadeOutText 0.6s ease forwards;
+  animation: fadeOutText 0.6s ease forwards;
 }
 
 .hovered__0a06e .discriminator__0a06e {
-    animation: fadeInText 0.6s ease forwards !important;
+  animation: fadeInText 0.6s ease forwards !important;
 }
 
+.newMessagesBar__0f481,
 .notice__30f28 {
-    animation: heightTopIn 0.6s ease forwards !important;
+  animation: heightTopIn 0.6s ease forwards !important;
 }
 
 .bannerImage_f37cb1 {
-    animation: fadeInImg 1s ease forwards !important;
+  animation: fadeInImg 1s ease forwards !important;
 }
 
 .progressBar_eff079 {
-    animation: widthIn 1.2s ease forwards !important;
+  animation: widthIn 1.2s ease forwards !important;
 }
 
 @keyframes fadeInText {
-    from {
-        color: #ffffff00;
-        text-shadow: #00000000;
-        box-shadow: #00000000;
-    }
-
-    to {
-    }
+  from {
+    color: #ffffff00;
+    text-shadow: #00000000;
+    box-shadow: #00000000;
+  }
+  to {}
 }
 
 @keyframes fadeOutText {
-
-    from {
-    }
-
-    to {
-        color: #ffffff00;
-        text-shadow: #00000000;
-        box-shadow: #00000000;
-    }
+  from {}
+  to {
+    color: #ffffff00;
+    text-shadow: #00000000;
+    box-shadow: #00000000;
+  }
 }
 
 @keyframes fadeInImg {
-    from {
-        opacity: 0;
-    }
-
-    to {
-    }
+  from {
+    opacity: 0;
+  }
+  to {}
 }
 
 @keyframes heightTopIn {
-    from {
-        transform: translateY(-50%) scaleY(0);
-    }
-
-    to {
-    }
+  from {
+    height: 0px;
+  }
+  to {}
 }
 
 @keyframes widthIn {
-    from {
-        width: 0;
-    }
-
-    to {
-    }
+  from {
+    width: 0;
+  }
+  to {}
 }

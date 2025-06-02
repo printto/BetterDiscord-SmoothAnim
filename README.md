@@ -1,6 +1,6 @@
 # Smooth Anim for BetterDiscord
 
-A simple BetterDiscord theme that adds smooth transitions and subtle animations to Discord.
+An Aero theme that adds smooth transitions and subtle animations to your BetterDiscord.
 
 ## Features
 
@@ -11,4 +11,4 @@ A simple BetterDiscord theme that adds smooth transitions and subtle animations 
 
 This theme focuses on using `transition` for better performance. Keyframes are used selectively to enhance appearance.
 
-This theme does **not** change Discord’s visual layout or colours, only the animations — making it compatible with most other themes.
+This theme also changes BetterDiscord’s visual layout and colours, you may use only the transitions, animations, and keyframes — making it compatible with other themes.
